@@ -17,12 +17,12 @@ const Addtask = () => {
 
 
      <div className="inputfield">
-      <h1 className=" font-bold">Task</h1>
-      <div className=" border border-gray-300 rounded-md shadow-md">
+      <h1 className=" inputtask">Task</h1>
+      <div className=" imput">
         <input
           type="text"
-          className="w-full outline-none"
-          placeholder="Search..."
+          className="inputbar "
+          placeholder="Type your task here.. "
         />
       </div>
     </div>

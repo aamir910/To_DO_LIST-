@@ -13,6 +13,8 @@
     padding-right: 1rem;
     justify-content: space-between;
     width: 100%;
+    margin: 0.5rem 0.25rem ;
+    font-size: 14px;
 
 }
 .addbtn
@@ -60,4 +62,25 @@
     padding: 0.25rem 0.5rem;
     margin: 0.5rem;
     border-radius: 0.5rem;
+}
+.inputbar
+{
+    border-radius: 0.5rem;
+   width: 70%;
+   margin-left: 15%;
+    padding: 0.5rem;
+   border: 1px solid black;
+   font-size: 10px;
+}
+.inputbar:hover
+{
+    border-color: none;
+}
+.inputtask
+{
+    margin-left: 16%;
+    font-size: 10px;
+    font-weight: bold;
+    color: grey ;
+    margin-bottom: 0.25rem;
 }
