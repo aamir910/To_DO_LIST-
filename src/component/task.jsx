@@ -1,5 +1,5 @@
 import {React , useState} from 'react'
-import "./main_list.css";
+import "./task.css";
 
 import { Circle } from "rc-progress";
 
@@ -34,7 +34,7 @@ const Task = ({tasks , level }) => {
 
   return (
     <div>
-    <div className=" mappingarea  flex flex-row  items-center justify-center space-between h-10  m-1    ">
+    <div className=" mappingarea    items-center justify-center space-between   ">
               <div className=" p-2">
                 <p className="taskpriority text-gray-400">task</p>
                 <p className="taskpriority2 text-sm text-black-600">
@@ -75,7 +75,7 @@ const Task = ({tasks , level }) => {
                 </p>
               </div>
 
-              <div className="p-4">
+              <div className=" deleteedit">
                 <button>
                   <FontAwesomeIcon
                     icon={faTrashAlt}

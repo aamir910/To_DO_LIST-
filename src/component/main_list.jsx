@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
-
+import './main_list.css'
 import Task from "./task";
+import Addtask from "./AddTask";
 // let   showlist = ()=>{
 //     // const [showlist , setshowlist ] = useState([])
 //     let arr = [1 ,2 ,3 ,4 , 5]
@@ -11,21 +12,38 @@ import Task from "./task";
 //         )
 //     }
 const MainList = () => {
-  const [tasks, settasks] = useState([]);
+  // const [tasks, settasks] = useState([]);
 
-  const data = [
-    {
-      task: "go to gym",
-      level: "high",
-    }
-  ];
+  // const data = [
+  //   {
+  //     task: "go to gym",
+  //     level: "high",
+  //   }
+  // ];
+
+ const[show , setshow ] = useState(true) ; 
+
+
 
   function Todo() {
-    return settasks([ ]);
+
+    return (
+ <div>
+      {/* <Addtask/> */}
+      <div className=' h-11 w-11 bg-black flex items-center justify-center absolute '>
+    hello my name is AMIR
+  </div>
+    </div>
+  )
   }
 
   return (
+    
     <div className=" bg-gray-200 h-screen flex flex-col  items-center">
+
+   
+
+
       <div className=" p-4">
         {/* Your content goes here */}
         <div className=" main_task flex flex-row space-between">
@@ -63,6 +81,11 @@ const MainList = () => {
       
 
       {/* taskshow end ************************ */}
+               
+      <div className="showaddingpart">
+      {show ? <Addtask/>: <p>Rendered when condition is false</p>}
+    </div>
+
     </div>
   );
 };
